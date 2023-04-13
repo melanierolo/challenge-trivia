@@ -12,12 +12,14 @@ if (comenzarButton) {
 /*Función del botón para ir hacia trivia.html */
 function goTrivia() {
   const inputUserName = document.getElementsByName("userName")[0].value;
-
+  const pageTrivia = window.location.href.replace(
+    "index.html",
+    "pages/trivia.html"
+  );
   if (inputUserName === "") {
     alert("Por favor, no te olvides de ingresar tu nombre 😁 .");
   } else {
-    window.location.href =
-      "https://melanierolo.github.io/challenge-trivia/pages/trivia.html";
+    window.location.href = pageTrivia;
     //guardar nombre en el local storage
     localStorage.setItem("username", inputUserName);
   }
