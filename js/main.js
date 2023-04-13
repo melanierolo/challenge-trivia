@@ -20,6 +20,7 @@ function goTrivia() {
     alert("Por favor, no te olvides de ingresar tu nombre 😁 .");
   } else {
     window.location.href = pageTrivia;
+    console.log(pageTrivia);
     //guardar nombre en el local storage
     localStorage.setItem("username", inputUserName);
   }
