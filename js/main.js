@@ -12,7 +12,7 @@ if (comenzarButton) {
 /*Función del botón para ir hacia trivia.html */
 function goTrivia() {
   const inputUserName = document.getElementsByName("userName")[0].value;
-  let pageTrivia = window.location.href.includes("melanierolo")
+  const pageTrivia = window.location.href.includes("melanierolo")
     ? "https://melanierolo.github.io/challenge-trivia/pages/trivia.html"
     : window.location.href.replace("index.html", "pages/trivia.html");
   if (inputUserName === "") {
