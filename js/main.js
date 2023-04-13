@@ -17,7 +17,7 @@ function goTrivia() {
     alert("Por favor, no te olvides de ingresar tu nombre 😁 .");
   } else {
     window.location.href =
-      "http://127.0.0.1:5500/Proyectos/0-reto-trivia-1/pages/trivia.html";
+      "https://melanierolo.github.io/challenge-trivia/pages/trivia.html";
     //guardar nombre en el local storage
     localStorage.setItem("username", inputUserName);
   }
