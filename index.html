@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <img
+          class="hero__image"
+          src="./img/hero-pelis.png"
+          alt="hero of Trivia Pelis"
+        />
+      </section>
+      <section class="welcome">
+        <h2>Bienvenid@ a Trivia Pelis</h2>
+        <p>
+          Aquí pondrás a prueba tus conocimientos sobre las películas que te
+          gusta ver.
+        </p>
+        <label
+          >¿Cómo te llamas?
+          <input
+            class="welcome__input"
+            placeholder="Nombre"
+            type="text"
+            name="userName"
+          />
+        </label>
+        <button
+          id="comenzarButton"
+          name="comenzarButton"
+          class="btn btn--primary"
+        >
+          Comenzar
+        </button>
+      </section>
+      <footer>
+        <p class="footer__text">
+          <span>&#64;copyright 2023 - all rights reserved</span>
+        </p>
+      </footer>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

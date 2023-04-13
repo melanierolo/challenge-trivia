@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Trivia</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 class="greeting">Hola 🚀</h1>
+      </header>
+      <section class="form__trivia">
+        <form id="form">
+          <fieldset>
+            <legend>Pregunta 1</legend>
+            <p>¿Qué película de terror fue el debut de Johnny Depp?</p>
+            <label class="primer-label">
+              <input type="radio" name="qOne" value="sombras-en-la-oscuridad" />
+              Sombras en la oscuridad
+            </label>
+            <label class="primer-label">
+              <input type="radio" name="qOne" value="desde-el-infierno" /> Desde
+              el infierno
+            </label>
+            <label class="primer-label">
+              <input
+                type="radio"
+                name="qOne"
+                value="una-pesadilla-en-la-calle-Elm"
+              />
+              una pesadilla en la calle Elm
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Pregunta 2</legend>
+            <p>¿Cuántas películas de Saw hay?</p>
+            <label>
+              <input type="radio" name="qTwo" value="ocho-peliculas" /> Ocho
+              películas
+            </label>
+            <label>
+              <input type="radio" name="qTwo" value="nueve-peliculas" /> Nueve
+              películas
+            </label>
+            <label>
+              <input type="radio" name="qTwo" value="diez-peliculas" />Diez
+              películas
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Pregunta 3</legend>
+            <p>¿En qué película se vio por primera vez la muñeca Anabelle?</p>
+            <label>
+              <input type="radio" name="qThree" value="the-conjuring" /> The
+              Conjuring
+            </label>
+            <label>
+              <input type="radio" name="qThree" value="viernes-13" />Viernes 13
+            </label>
+            <label>
+              <input type="radio" name="qThree" value="insidioso" />Insidioso
+            </label>
+          </fieldset>
+          <div>
+            <input
+              class="btn btn--primary"
+              value="Responder"
+              id="submit"
+              type="submit"
+            />
+          </div>
+        </form>
+      </section>
+      <section>
+        <h3 id="results"></h3>
+        <div class="buttons">
+          <button class="btn btn--secondary" onclick="showAnswer()">
+            Ver respuestas
+          </button>
+          <a class="btn btn--secondary" href="../index.html">Ir a Inicio</a>
+        </div>
+        <div>
+          <ol id="answer__list"></ol>
+        </div>
+      </section>
+      <footer>
+        <p><span>&#64;copyright 2023 - all rights reserved</span></p>
+      </footer>
+    </main>
+    <script type="text/javascript" src="../js/main.js"></script>
+  </body>
+</html>

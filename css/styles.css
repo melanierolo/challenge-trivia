@@ -1,0 +1,96 @@
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+
+.hero__image {
+  width: 100%;
+}
+.welcome {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+}
+
+/*input*/
+.welcome__input {
+  border: 1px solid #d1d1d1;
+  margin: 16px 0 0 16px;
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+}
+
+fieldset {
+  max-width: 600px;
+  padding: 20px;
+  margin: 40px;
+  border-radius: 25px;
+  border: white solid 0px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+.form__trivia {
+  display: flex;
+  justify-content: space-around;
+}
+
+#results {
+  text-align: center;
+}
+
+#answer__list {
+  padding: 20px 20%;
+}
+
+/*buttons css*/
+.btn {
+  width: 100px;
+  padding: 10px 5px;
+  margin: 16px;
+  font-size: small;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.btn--primary {
+  border-radius: 10px;
+  color: white;
+  background: #3f53d9;
+}
+
+.btn--primary:hover {
+  background: #3b4ecc;
+}
+
+.btn--secondary {
+  border-bottom: 2px solid #969696;
+  padding: 3px;
+  color: #3a3a3a;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
