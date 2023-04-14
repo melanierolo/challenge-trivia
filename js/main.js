@@ -16,7 +16,7 @@ function goTrivia() {
     ? window.location.href.replace("/index.html", "/")
     : window.location.href;
 
-  alert("url-location", goToTrivia);
+  //alert("url-location", goToTrivia);
 
   if (inputUserName === "") {
     alert("Por favor, no te olvides de ingresar tu nombre 😁 .");
