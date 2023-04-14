@@ -12,15 +12,16 @@ if (comenzarButton) {
 /*Función del botón para ir hacia trivia.html */
 function goTrivia() {
   const inputUserName = document.getElementsByName("userName")[0].value;
+  const goToTrivia = window.location.href.includes("index.html")
+    ? window.location.href.replace("/index.html", "/")
+    : window.location.href;
+
+  alert("url-location", goToTrivia);
+
   if (inputUserName === "") {
     alert("Por favor, no te olvides de ingresar tu nombre 😁 .");
   } else {
-    window.location.href = window.location.href.includes("melanierolo")
-      ? window.location.href.replace(
-          "/challenge-trivia/",
-          "/challenge-trivia/pages/trivia.html"
-        )
-      : window.location.href.replace("index.html", "pages/trivia.html");
+    window.location.assign(goToTrivia + "pages/trivia.html");
     //guardar nombre en el local storage
     localStorage.setItem("username", inputUserName);
   }
